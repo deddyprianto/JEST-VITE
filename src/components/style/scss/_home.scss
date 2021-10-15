@@ -1,0 +1,12 @@
+@mixin home($bgColor, $bgText) {
+  background-color: $bgColor;
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $bgText;
+  margin-top: -15px;
+  position: relative;
+}

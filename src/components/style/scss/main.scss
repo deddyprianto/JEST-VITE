@@ -1,0 +1,61 @@
+@use "_container.scss" as container;
+@use "_footer.scss" as footer;
+@use "_home.scss" as home;
+.container {
+  @include container.container();
+  .MuiAppBar-root {
+    background-color: #ee6c4d !important;
+  }
+  .Container_home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .home {
+      @include home.home(#ee6c4d, #dee2e6);
+      .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        flex-direction: column;
+        .rounded_Image {
+          position: absolute;
+          bottom: 32%;
+        }
+        @media (max-width: 576px) {
+          .custom__Upload {
+            position: absolute;
+            bottom: 44%;
+            left: 35%;
+          }
+        }
+        @media (min-width: 1200px) {
+          .custom__Upload {
+            position: absolute;
+            bottom: 44%;
+            left: 46%;
+          }
+        }
+      }
+    }
+    .waves {
+      width: 100%;
+      position: absolute;
+      bottom: 19%;
+      @media (min-width: 1200px) {
+        bottom: 10%;
+      }
+    }
+    .text_Field {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+  }
+  .footer {
+    @include footer.footer();
+  }
+}

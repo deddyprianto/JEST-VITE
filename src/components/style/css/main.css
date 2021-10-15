@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+.container {
+  font-family: "Nunito", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 2.4fr 70px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "." "." ".";
+  height: 100vh;
+}
+.container .MuiAppBar-root {
+  background-color: #ee6c4d !important;
+}
+.container .Container_home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.container .Container_home .home {
+  background-color: #ee6c4d;
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #dee2e6;
+  margin-top: -15px;
+  position: relative;
+}
+.container .Container_home .home .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: column;
+}
+.container .Container_home .home .image .rounded_Image {
+  position: absolute;
+  bottom: 32%;
+}
+@media (max-width: 576px) {
+  .container .Container_home .home .image .custom__Upload {
+    position: absolute;
+    bottom: 44%;
+    left: 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .container .Container_home .home .image .custom__Upload {
+    position: absolute;
+    bottom: 44%;
+    left: 46%;
+  }
+}
+.container .Container_home .waves {
+  width: 100%;
+  position: absolute;
+  bottom: 19%;
+}
+@media (min-width: 1200px) {
+  .container .Container_home .waves {
+    bottom: 10%;
+  }
+}
+.container .Container_home .text_Field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.container .footer {
+  background-color: #ee6c4d;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #dee2e6;
+}
+
+/*# sourceMappingURL=main.css.map */
